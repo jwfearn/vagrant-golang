@@ -4,10 +4,6 @@ set -u
 
 ## INSTALL
 
-apt-get -qq update
-apt-get -qq install \
-    git-core
-
 GO_GZ='go1.4.1.linux-amd64.tar.gz'
 GO_SRC="/usr/local/src/${GO_GZ}"
 wget -nv --no-check-certificate -O "${GO_SRC}" "http://golang.org/dl/${GO_GZ}"
